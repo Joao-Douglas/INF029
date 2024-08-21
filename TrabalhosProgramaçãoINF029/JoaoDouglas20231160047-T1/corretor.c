@@ -20,26 +20,26 @@
 //renomeie o arquivo do include abaixo para PrimeiroUltimoNomeMATRICULA.h
 #include "JoãoDouglas20231160047.h"
 
-//void testQ1();
-//void testQ2();
+void testQ1();
+void testQ2();
 void testQ3();
 void testQ4();
-//void testQ5();
-//void testQ6();
+void testQ5();
+void testQ6();
 
 int main(){
     //pridntf("q1\n");
-    //testQ1(); // 10 testes
+    testQ1(); // 10 testes
     //pridntf("q2\n");
-    //testQ2(); // 35 testes
+    testQ2(); // 35 testes
     //prindtf("q3\n");
     testQ3(); // 13 testes
     //prdintf("q4\n");
-    //testQ4(); // 22 testes
+    testQ4(); // 22 testes
     //prdintf("q5\n");
-    //testQ5(); // 10 testes
+    testQ5(); // 10 testes
     //prdintf("q6\n");
-   // testQ6(); // 10 testes 
+    testQ6(); // 10 testes 
 
 
 }
@@ -233,11 +233,11 @@ void testQ4(){
     }
     wcscpy(strTexto,L"Laboratorio de programacao: para ratos de programação");
     wcscpy(strBusca,L"rato");
-    wprintf("%d\n",q4(strTexto, strBusca, posicoes, 30) == 2);
-    printf("%d\n",posicoes[0]==5);
-    printf("%d\n",posicoes[1]==8);
-    printf("%d\n",posicoes[2]==34);
-    printf("%d\n",posicoes[3]==37);
+    wprintf(L"%d\n",q4(strTexto, strBusca, posicoes, 30) == 2);
+    wprintf(L"%d\n",posicoes[0]==5);
+    wprintf(L"%d\n",posicoes[1]==8);
+    wprintf(L"%d\n",posicoes[2]==34);
+    wprintf(L"%d\n",posicoes[3]==37);
 
 
     for (i = 0; i<30; i++){
@@ -245,35 +245,35 @@ void testQ4(){
     }
     wcscpy(strTexto,L"Ola, o mundo e muito grande. Tem muitas pessoas, e muitos problemas");
     wcscpy(strBusca,L"mui");
-    wprintf("%d\n",q4(strTexto, strBusca, posicoes, 30) == 3);
-    printf("%d\n",posicoes[0]==16);
-    printf("%d\n",posicoes[1]==18);
-    printf("%d\n",posicoes[2]==34);
-    printf("%d\n",posicoes[3]==36);
-    printf("%d\n",posicoes[4]==52);
-    printf("%d\n",posicoes[5]==54);
+    wprintf(L"%d\n",q4(strTexto, strBusca, posicoes, 30) == 3);
+    wprintf(L"%d\n",posicoes[0]==16);
+    wprintf(L"%d\n",posicoes[1]==18);
+    wprintf(L"%d\n",posicoes[2]==34);
+    wprintf(L"%d\n",posicoes[3]==36);
+    wprintf(L"%d\n",posicoes[4]==52);
+    wprintf(L"%d\n",posicoes[5]==54);
 
     for (i = 0; i<30; i++){
         posicoes[i] = -1;
     }
     wcscpy(strTexto,L"Programar é legal?");
     wcscpy(strBusca,L"sim");
-   wprintf("%d\n",q4(strTexto, strBusca, posicoes, 30) == 0);
+   wprintf(L"%d\n",q4(strTexto, strBusca, posicoes, 30) == 0);
 
     for (i = 0; i<30; i++){
         posicoes[i] = -1;
     }
     wcscpy(strTexto,L"maraaaavilha, meu prograaaama funcionou");
     wcscpy(strBusca,L"aa");
-    wprintf("%d\n",q4(strTexto, strBusca, posicoes, 30) == 4);
-    printf("%d\n",posicoes[0]==4);
-    printf("%d\n",posicoes[1]==5);
-    printf("%d\n",posicoes[2]==6);
-    printf("%d\n",posicoes[3]==7);
-    printf("%d\n",posicoes[4]==24);
-    printf("%d\n",posicoes[5]==25);
-    printf("%d\n",posicoes[6]==26);
-    printf("%d\n",posicoes[7]==27);
+    wprintf(L"%d\n",q4(strTexto, strBusca, posicoes, 30) == 4);
+    wprintf(L"%d\n",posicoes[0]==4);
+    wprintf(L"%d\n",posicoes[1]==5);
+    wprintf(L"%d\n",posicoes[2]==6);
+    wprintf(L"%d\n",posicoes[3]==7);
+    wprintf(L"%d\n",posicoes[4]==24);
+    wprintf(L"%d\n",posicoes[5]==25);
+    wprintf(L"%d\n",posicoes[6]==26);
+    wprintf(L"%d\n",posicoes[7]==27);
 
 }
 
